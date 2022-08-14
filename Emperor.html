@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/NavBar.css">
+<style>
+body
+{
+  background-image: url("Images/emperors\ bg.jpg");
+  background-repeat: repeat-y;
+  justify-content: center;
+  align-items: center;
+}
+
+*
+{
+  box-sizing:border-box;
+}
+
+.accordian
+{
+  max-width:1200px;
+  margin:auto;
+}
+.accordian .contentBox
+{
+  position:relative;
+  margin:10px 20px
+}
+.accordian .contentBox .label
+{
+  position:relative;
+  padding:10px;
+  background-color: rgb(255, 0, 0);
+  color:#fff;
+  cursor:pointer;
+}
+.accordian .contentBox .info
+{
+  position:relative;
+  background-color: rgb(255, 255, 255);
+  height:0;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: small;
+  color:black
+}
+.accordian .contentBox.active .info
+{
+  height:auto;
+  padding: 10px;
+}
+.accordian .contentBox .label::before
+{
+  content: '+';
+  position: absolute;
+  top: 50%;
+
+  right:20px;
+  transform: translateY(-50%);
+  font-size:1.5em;
+}
+
+.mobile-container
+{
+  min-height: 800px;
+  height:auto;
+  max-height: 2800px;
+}
+
+.r
+{
+  color:red;
+}
+.b
+{
+  color:rgb(0, 68, 255);
+}
+</style>
+</head>
+<body>
+
+<div class="mobile-container">
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="Index.html" class="active">
+    <img src="Images/Roman Standard.png" alt="standard/flag" style="width: 70px;height:50px">
+  </a>
+  <div id="myLinks">
+    <a href="Origin.html">Origins of the Roman Empire</a>
+    <a href="Emperor.html">Julio-Claudian Era Emperors</a>
+    <a href="Minigame.html">Quiz</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class ="accordian">
+  <div class="contentBox">
+    <div class="label">Augustus</div>
+    <div class="info">
+      <img src="Images/Augustus.jpg" alt="Caeser Augustus" style="width: 150px;height:150px">
+      <h2>
+        Reign: 16 January 27 BC – 19 August AD 14
+      </h2>
+      <h3>
+        Original Name: Gaius Octavian
+      </h3>
+      <p>
+        The First Emperor
+      </p>
+      <!---Good-->
+      <li class="b">
+         One of the most successful leaders in Ancient Rome
+      </li>
+      <li class="b">
+         Made the Empire into one that is prosperous and financially stable
+      </li>
+      <li class="b">
+         Facilitated many reforms, such as new buildings and a police force
+      </li>
+      <li class="b">
+         Rome was able to expand into Germany and Spain under his leadership
+      </li>
+      <li class="b">
+         Began the 200-year PAX ROMANA(Roman Peace)
+      </li>
+
+
+        <!--Bad-->
+      <p class="r">
+        
+      </p>
+
+    </div>
+  </div>
+  <div class="contentBox">
+    <div class="label">Tiberus</div>
+    <div class="info">
+      <img src="Images/Tiberus.jpg" alt="Tiberius" style="width: 150px;height:150px">
+      <h2>
+        Reign:17 September 14 – 16 March 37
+      </h2>
+      <h3>
+        The Second Emperor
+      </h3>
+      <!---Good-->
+      <li class="b">
+         A Capable and Efficent Administrator
+      </li>
+      <li class="b">
+         Avoids unnecessary conflicts
+      </li>
+      <li class="b">
+         Facilitated many reforms, such as new buildings and a police force
+      </li>
+      <li class="b">
+         Made the use of Imperial System more commonly accepted
+      </li>
+
+      <!--Bad-->
+      <li class="r">
+         Had a difficult and resentful relationship with the Roman senate
+      </li>
+      <li class="r">
+         Deemed to be somehwat paranoid
+      </li>
+    </div>
+  </div>
+  <div class="contentBox">
+    <div class="label">Caligula</div>
+    <div class="info">
+      <img src="Images/Caligula.jpg" alt="Caligula" style="width: 150px;height:150px">
+      <h2>
+        Reign:18 March 37 – 24 January 41
+      </h2>
+      <h3>
+        The third Emperor
+      </h3>
+      <!---Good-->
+      <li class="b">
+         Freed citizens that had been unjustly imprisoned by Tiberus
+      </li>
+      <li class="b">
+         Abolished Unpopular taxes
+      </li>
+      <li class="b">
+         Restored the practice of elections
+      </li>
+      <li class="b">
+         Known to stage many lavish events
+      </li>
+
+      <!--Bad-->
+      <li class="r">
+         Shortest period of reign in the dynasty
+      </li>
+      <li class="r">
+         The curelist Roman Emperor
+      </li>
+      <li class="r">
+         Mentally ill and deranged after a long sickeness
+      </li>
+      <li class="r">
+         Put the Empire into a finanical crisis with his spending
+      </li>
+      <li class="r">
+         GodComplex
+      </li>
+      <li class="r">
+         Ruthlessly killed many Roman Citizens and his own familiy
+      </li>
+      <li class="r">
+         First Emperor confirmed to be assassinated
+      </p>
+    </div>
+  </div>
+  <div class="contentBox">
+    <div class="label">Claudius</div>
+    <div class="info">
+      <img src="Images/Claudis.jpg" alt="Claudis" style="width: 150px;height:150px">
+      <h2>
+        Reign:24 January 41 – 13 October 54
+      </h2>
+      <h3>
+        The fourth Emperor of the Roman Empire
+      </h3>
+      <!---Good-->
+      <li class="b">
+         An able and efficient administrator
+      </li>
+      <li class="b">
+         Restored the Empire's finances
+      </li>
+      <li class="b">
+         An ambitious builder that ordered the construction of many new roads, aqueducts, and canals
+      </li>
+      <li class="b">
+         Assembled a massive army
+      </li>
+      <li class="b">
+         Restored the Empire's finances
+      </li>
+      <li class="b">
+         Successful expansion of Rome into Britain , Africa and the Middle East
+      </li>
+      <li class="b">
+         Restored of the rule of law
+      </li>
+
+      <!--Bad-->
+      <li class="r">
+         Seen as vulnerable
+      </li>
+      <li class="r">
+         Aggravated the senates since he was brought to leadership by the Praetorian guards
+      </li>
+      <li class="r">
+          Resorted to bribery
+      </li>
+    </div>
+  </div>
+  <div class="contentBox">
+    <div class="label">Nero</div>
+    <div class="info">
+      <img src="Images/Nero.jpg" alt="Nero" style="width: 150px;height:150px">
+      <h2>
+        Reign:13 October 54 – 9 June 68
+      </h2>
+      <h3>
+        The fifth Emperor and last of the Julian-Claudian Dynasty
+      </h3>
+      <!---Good-->
+      <li class="b">
+         Popular with guards and low class citizens
+      </li>
+      <li class="b">
+         Contributed to Rome's diplomacy, trade, and culture
+      </li>
+
+      <!--Bad-->
+      <li class="r">
+         One of history's greatest criminal
+      </li>
+      <li class="r">
+         Tyrannical and Self-indulgent
+      </li>
+      <li class="r">
+         Compulsive and Corrupt
+      </li>
+      <li class="r">
+         Declared a public enemy
+      </li>
+      <li class="r">
+         Took his own life
+      </li>
+      <li class="r">
+         Death sparked a civil war
+      </li>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") 
+  {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+const accordian=document.getElementsByClassName
+('contentBox');
+
+//to display the content when the user clicks on the plus button
+for(i=0;i<accordian.length;i++){
+  accordian[i].addEventListener('click',function()
+  {
+    this.classList.toggle('active')
+  })
+}
+</script>
+
+</body>
+</html>

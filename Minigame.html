@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuizGame</title>
+<link rel="stylesheet" href="CSS/QuizGame.css">
+<script defer src="js/qjs.js"></script>
+<style>
+
+body
+{
+    background-image: url("Images/ModernRome.jpg");
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+   width: 70px;
+  height: 83px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: rgb(217, 93, 35);
+  color: black;
+}
+
+.active {
+  background-color: #b12323;
+  color: white;
+}
+.flag
+{
+  padding-top: 15px;
+  margin: auto;
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav">
+  <a href="Index.html" class="active">
+    <img src="Images/Roman Standard.png" alt="standard/flag" style="width: 70px;height:50px">
+  </a>
+  <div id="myLinks">
+    <a href="Origin.html">Origins of the Roman Empire</a>
+    <a href="Emperor.html">Julio-Claudian Era Emperors</a>
+    <a href="Minigame.html">Quiz</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+
+<div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start Quiz</button>
+      <button id="next-btn" class="next-btn btn hide">Next Question</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") 
+  {
+    x.style.display = "none";
+  } 
+  else 
+  {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

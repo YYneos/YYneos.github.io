@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/NavBar.css">
+<style>
+body
+{
+  background-image: url("Images/Empire.jpg");
+}
+
+.buttons1,.buttons2,.buttons3
+{
+   
+    font-size: 24px;
+    text-align:center;
+    color:rgba(59, 48, 25, 0.84); 
+    font-family: 'Times New Roman', Times, serif;
+
+    margin:auto;
+    display: block;
+    background-color: rgb(221, 150, 62);
+    width: 200px;
+    height:68px;
+    border: rgb(161, 89, 25) 2px solid;
+
+    opacity:1;
+    transition: 0.4s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 9px rgb(150, 81, 29);
+
+}
+    
+.buttons1
+{
+    margin:auto;
+}
+.buttons2
+{
+    
+    margin:auto;
+}
+.buttons3
+{
+    margin:auto;
+    
+}
+
+.buttons1:active,.buttons2:active,.buttons3:active
+{
+
+    background-color: #511f00;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.buttons1:hover,.buttons2:hover,.buttons3:hover
+{
+    opacity:0.8;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="Index.html" class="active">
+    <img src="Images/Roman Standard.png" alt="standard/flag" style="width: 70px;height:50px">
+  </a>
+  <div id="myLinks">
+    <a href="Origin.html">Origins of the Roman Empire</a>
+    <a href="Emperor.html">Julio-Claudian Era Emperors</a>
+    <a href="Minigame.html">Quiz</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px;padding-right: 16px;">
+  <img src="Images/Roman Standard.png"  class="flag" alt="standard/flag" style="width: 240px; height:148px">
+
+  <p>.</p>
+  <a href="Origin.html" style="text-decoration: none">
+    <div class="buttons1">Origins of the Roman Empire</div>
+  </a>
+
+  <p >.</p>
+  <a href="Emperor.html"style="text-decoration: none">
+    <div class="buttons2">Julio-Claudian Era Emperors</div>
+  </a>
+
+  <p>.</p>
+  <a href="Minigame.html"style="text-decoration: none">
+    <div class="buttons3">Quiz</div>
+  </a>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") 
+  {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

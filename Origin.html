@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/NavBar.css">
+<style>
+body
+{
+  background-image: url("Images/ModernRome.jpg");
+  background-repeat: repeat-y;
+}
+
+h1
+{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h2
+{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+.contentContainer
+{
+  border: rgb(145, 145, 145) 2px solid;
+  margin:auto;
+  margin-top: 10px;
+  width:80%;
+  height: 40%;
+  display:grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.imgbox
+{
+  border: rgb(0, 0, 0) 2px solid;
+  width:100%;
+}
+.txtbox
+{
+  border: rgb(129, 129, 129) 2px solid;
+  padding:15px;
+  width:100%;
+  text-align: justify;
+  background-color: bisque;
+}
+
+.mobile-container
+{
+  min-height: 800px;
+  height:auto;
+  max-height: 2800px;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="Index.html" class="active">
+    <img src="Images/Roman Standard.png" alt="standard/flag" style="width: 70px;height:50px">
+  </a>
+  <div id="myLinks">
+    <a href="Origin.html">Origins of the Roman Empire</a>
+    <a href="Emperor.html">Julio-Claudian Era Emperors</a>
+    <a href="Minigame.html">Quiz</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<h1>ModernRome</h1>
+<div class="contentContainer">
+  <div class="imgbox" style="grid-column-start: 1;grid-column-end: 3;">
+    <img src="Images/RomeColo.jpg" alt="modern rome" style="width:100%;height:100%">
+  </div>
+  <div class="txtbox" style="grid-column-start: 3;grid-column-end: 6;">
+    <h2>
+      The capital and largest city of Italy,with over 2.8 million citizens living within it, being the third most populated city inside the European Union,beaten only by
+      Berlin and Madrid. It is also the 2nd most visited city in EU,after Paris.
+    </h2>
+    <h2>
+      Top Tourism Attraction
+      <p>
+        1. Pantheon
+      </p>
+      <p>
+        2.Coloseum
+      </p>
+      <p>
+        3.Trevi Fountain
+      </p>
+    </h2>
+  </div>
+</div>
+
+<h1>The Romulus Myth</h1>
+<div class="contentContainer">
+  <div class="imgbox" style="grid-column-start: 1;grid-column-end: 3;">
+    <img src="Images/MythStatue.jpg" alt="statue depiction" style="width:100%;height:100%">
+  </div>
+  <div class="txtbox" style="grid-column-start: 3;grid-column-end: 6;">
+    <h2>A legend regarding the founding of Rome and a traditional stories that tells the earlist history of the City. The most well known of the Roman Myths.</h2>
+    <h2>The twins in this story are Romulus and Remus,their parents being urported to be Rhea Silvia and the god of war,Mars; or the Famous Hero Hercules.</h2>
+    <h2>
+      The twins were abandoned at birth near the Tiber River, and nutured by a She-Wolf; as depicted by the famous statue called Captionile Wolf (left picture),
+      till a shepherd named Faustulus found the boys and took them in and raised them as his sons.
+    </h2>
+  </div>
+</div>
+<div class="contentContainer">
+  <div class="imgbox" style="grid-column-start: 1;grid-column-end: 3;">
+    <img src="Images/Romulusbrother.jpg" alt="coin depicting the twins" style="width:100%;height:100%">
+  </div>
+  <div class="txtbox" style="grid-column-start: 3;grid-column-end: 6;">
+    <h2>When The Twins reached adulthood, they would established a city</h2>
+    <h2>They argued over where the city would be built and who would rule over it, both sides with their followers establishing city walls on their more favoured hills.</h2>
+    <h2>
+      The common depiction of the following event was Remus leaping over his brother's wall as a insult, resulting in himself getting slain either by Romulus or Romulus's follower,
+    </h2>
+    <h2>
+      The ended with Romulus gaining rulership over the city and subsequently having the city named after himself, thus the creation of Rome
+    </h2>
+    <h2 style="color:red;">
+      This event in the myth is often used to represent Rome's history of political dispute and bloodshed, for its creation began with fratricide and divisions.
+    </h2>
+  </div>
+</div>
+
+<h1>Founding of the Empire</h1>
+<div class="contentContainer">
+  <div class="imgbox" style="grid-column-start: 1;grid-column-end: 3;">
+    <img src="Images/Battle of Actium.jpg" alt="Actium" style="width:100%;height:100%">
+  </div>
+  <div class="txtbox" style="grid-column-start: 3;grid-column-end: 6;">
+    <h2>
+      As for the founding of the Roman Empire
+    </h2>
+    <h2>
+      After concieving a deciscive victory at the battle of Actium over his rival and 
+      returning to Rome a hero, Gaius Octavian(later known as "Augustus") proclaimed himself the first emperor of
+      Rome in 31BC and founding the Roman Empire, starting his reign in 27 BC till 13
+      AD, starting the period known as the Julio-Claudian Dynasty whose Emperors ruled from 27 BC till AD 68.
+    </h2>
+  </div>
+</div>
+<!-- End smartphone / tablet look -->
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") 
+  {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
